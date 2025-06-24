@@ -23,7 +23,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3.11.1
         with:
-          config-inline: ${{ vars.BUILDX_CONFIG }}
+          buildkitd-config-inline: ${{ vars.BUILDX_CONFIG }}
 
       # https://github.com/docker/login-action
       - name: Log into registry
