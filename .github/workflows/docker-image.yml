@@ -63,7 +63,8 @@ jobs:
           tags: |
             type=raw,value=latest
             type=sha
-            type=ref,event=tag
+            # type=ref,event=tag # any tags any tag format
+            type=semver,pattern={{version}}
 
       # Build and push Docker image with Buildx
       # https://github.com/docker/build-push-action
