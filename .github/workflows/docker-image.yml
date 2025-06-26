@@ -5,7 +5,10 @@ on:
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
-    tags: [ '*.*.*' ]
+    tags: 
+      - '*.*.*'
+      - '*'
+    #[ '*.*.*' ]
 
 permissions:
   contents: read
